@@ -17,41 +17,28 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Remix Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+    <!-- Material UI Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 </head>
 <body>
     <!-- HEADER -->
     <header class="header">
-        <div class="header__container container">
-            <!-- Move the icon to the top left corner -->
-            <div class="header__toggle" id="header-toggle">
-                <i class="ri-menu-line"></i>
-            </div>
-            <div class="header__title">
-                <h1>Digital Twin Viewer</h1>
-            </div>
-        </div>
+        Actuator Digital Twin       
     </header>
     
-
     <div class="container">
-        <div class="titleBar"></div>
         <div class="sidebar" id="sidebar">
             <nav class="sidebar__container">
                 <div class="sidebar__list">
                     <a href="#" class="sidebar__link active-link">
-                        <i class="ri-home-5-line"></i>
-                        <span class="sidebar__link-name">Open</span>
-                        <span class="sidebar__link-floating">Open</span>
+                        <i class="material-icons">folder</i>
                     </a>
                     <a href="#" class="sidebar__link">
                         <i class="ri-compass-3-line"></i>
-                        <span class="sidebar__link-name">Form</span>
-                        <span class="sidebar__link-floating">Form</span>
                     </a>
                     <a href="#" class="sidebar__link">
                         <i class="ri-video-line"></i>
-                        <span class="sidebar__link-name">View</span>
-                        <span class="sidebar__link-floating">View</span>
                     </a>
                 </div>
             </nav>
@@ -83,7 +70,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-7">
                         <div class="dropdown mt-5">
                             <select id="graph1Dropdown" onchange="updateChart(chart1, this.value)">
                                 <option value="all">All</option>
@@ -96,7 +83,7 @@
                             <canvas id="myChart1"></canvas>
                         </div>
                         <div class="dropdown mt-3">
-                            <select id="graph2Dropdown" onchange="updateChart(chart2, this.value)">
+                            <select id="graph1Dropdown" onchange="updateChart(chart2, this.value)">
                                 <option value="all">All</option>
                                 <option value="red">Red</option>
                                 <option value="green">Green</option>
